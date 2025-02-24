@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik';
+    font-weight: 300;
+    color: white;
+    background-color: rgb(11, 18, 53);
+}
+
+.hero{
+    color: white;    
+}
+
+.hero .tracker{
+    margin-top: 100px;
+}
+
+.hero .tracker .profile{
+    position: relative;
+}
+
+.hero .tracker .profile .info{    
+    background: none;
+    background-color: rgb(98, 85, 211);
+    height: 320px;
+    padding: 20px 25px;
+    border-radius: 12px;
+    position: absolute;
+    width: 91.2%;
+}
+
+.hero .tracker .profile .info img{
+    height: 100px;
+    margin-bottom: 20px;
+    background-color: inherit;
+}
+
+.hero .tracker .profile .info p, .hero .tracker .profile .info h2{
+    background-color: inherit;
+}
+
+.hero .tracker .profile .list{
+    background-color: rgb(37, 37, 68);
+    padding: 25px 0 5px;
+    border-radius: 12px;
+    margin-top: 300px;
+    width: 98.5%;
+}
+
+.hero .tracker .profile .list li{
+    list-style-type: none;
+    background-color: inherit;
+}
+
+.hero .tracker .profile .list a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.548);
+    background-color: inherit;
+}
+
+.hero .tracker .profile .list a:active, .hero .tracker .profile .list a:hover{
+    color: white;
+}
+
+.hero .tracker .activities .activity{
+    position: relative;
+}
+
+.hero .tracker .activities .secondrow{
+    margin-top: 200px;
+}
+
+.hero .tracker .activities .activity .icon{
+    border-radius: 10px;
+    padding: 0 0 0 195px;
+    margin-bottom: -10px;
+}
+
+.hero .tracker .activities .activity .icon img{
+    height: 40px;
+    background-color: inherit;
+}
+
+.hero .tracker .activities .activity .details{
+    background-color: rgb(37, 37, 68);
+    padding: 12px 20px;
+    border-radius: 12px;
+    position: absolute;
+    width: 92%;
+    height: 160x;
+}
+
+.hero .tracker .activities .activity .details p, .hero .tracker .activities .activity .details h1, .hero .tracker .activities .activity .details .elipsis, .hero .tracker .activities .activity .details .elipsis img{
+    background-color: inherit;
+}
+
+.hero .tracker .activities .activity .elipsis{
+    float: right;
+}
+
+/* Design for screen sizes less than 1200 */
+@media screen and (max-width: 1199px){
+    .hero .tracker .profile{
+        margin-bottom: 50px;
+    }
+
+    .hero .tracker .profile .info{
+        display: flex;
+        justify-items: center;
+        width: 97.5%;
+        height: 320px;
+    }
+
+    .hero .tracker .profile .info img{
+        margin-left: 25px;
+        margin-top: 90px;
+    }
+
+    .hero .tracker .profile .info .deets{
+        margin-left: 20px;
+        margin-top: 107px;
+    }
+
+    .hero .tracker .profile .info .deets p{
+        margin-bottom: -0px;
+    }
+
+    .hero .tracker .profile .list{
+        width: 100%;
+    }
+
+    .hero .tracker .profile .list ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 10px;        
+    }
+
+    .hero .tracker .activities .activity .icon{
+        padding-left: 230px;
+    }
+}
+
+/* Design for screen sizes less than 992px */
+@media screen and (max-width: 991px){
+    .hero .tracker .profile .info{
+        width: 96.6%;
+    }
+
+    .hero .tracker .activities .firstrow{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hero .tracker .activities .activity{
+        margin-bottom: 190px;
+    }
+
+    .hero .tracker .activities .firstrow{
+        margin-bottom: -200px;
+    }
+
+    .hero .tracker .activities .activity .icon{
+        padding-left: 630px;
+        height: 50px;
+    }
+
+    .hero .tracker .activities .activity .details{
+        width: 97%;
+    }
+
+    .hero .tracker .activities .activity .icon img{
+        height: inherit;
+    }
+}
+
+/* Design for screen sixes less than 768px */
+@media screen and (max-width: 767px) {
+    .hero .tracker .profile .info{
+        width: 95.6%;
+    }
+
+    .hero .tracker .activities .activity .icon{
+        padding-left: 450px;
+        height: 50px;
+        /* width: 100%; */
+    }
+
+    .hero .tracker .activities .activity .details{
+        width: 96%;
+    }
+}
+
+/* Design for screen sizes less than 576px */
+@media screen and (max-width: 575px) {
+    .hero .tracker .profile .info{
+        height: 250px;
+    }
+
+    .hero .tracker .profile .info img{
+        margin-left: 15px;
+        margin-top: 60px;
+    }
+
+    .hero .tracker .profile .info .deets{
+        margin-left: 20px;
+        margin-top: 83px;
+    }
+
+    .hero .tracker .profile .list{
+        margin-top: 230px;
+    }
+
+    .hero .tracker .activities .activity .previous{
+        float: right;
+        margin-top: -35px;
+    }
+
+    .hero .tracker .activities .activity{
+        margin-bottom: 140px;
+    }
+}
